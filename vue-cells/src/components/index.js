@@ -2,18 +2,21 @@
  * @Author: lujing 
  * @Date: 2018-09-17 17:57:47 
  * @Last Modified by: lujing
- * @Last Modified time: 2018-09-17 17:58:14
+ * @Last Modified time: 2018-09-18 15:44:13
  * @Desc:所有的组件都以j开头，区分其他的组件  
  */
 
 import jTest from './jTest.vue'
-
+import jTest2 from './jTest2.vue'
+import jMultSlider from './jMultSlider.vue'
 
 
 
 // 所有的组件
 const vueCellSViews = {
-        jTest
+        jTest,
+        jTest2,
+        jMultSlider
     }
     // 遍历挂载组件
 function install(Vue, _) {
