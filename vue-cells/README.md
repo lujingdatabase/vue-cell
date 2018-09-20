@@ -5,13 +5,17 @@
 ## Build Setup
 
 ``` bash
-# install dependencies
-npm install
+# 安装
+npm install vue-cells --save
 
-# serve with hot reload at localhost:8080
+#引用
+import vueCells from 'vue-cells'
+Vue.use(vueCells)
+
+# 测试环境运行
 npm run dev
 
-# build for production with minification
+# 打包发布
 npm run build
 ```
 
