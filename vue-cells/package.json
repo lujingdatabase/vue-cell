@@ -1,7 +1,7 @@
 {
     "name": "vue-cells",
     "description": "常用的组件",
-    "version": "1.0.4",
+    "version": "1.0.7",
     "author": "lujing",
     "license": "MIT",
     "main": "dist/vue-cells.js",

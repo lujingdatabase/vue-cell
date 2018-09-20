@@ -2,7 +2,7 @@
  * @Author: lujing 
  * @Date: 2018-07-04 09:07:29 
  * @Last Modified by: lujing
- * @Last Modified time: 2018-09-19 13:36:52
+ * @Last Modified time: 2018-09-19 13:48:52
  * @Desc:  色块图
  */
  <template>
@@ -109,8 +109,8 @@ export default {
     //   );
       //   console.log("dataJson----", dataJson);
       this.totavaluelNum =  this.staticData[0].totavaluelNum;
-      this.valueNum = dataJson[0].valueNum;
-      this.titlename = dataJson[0].titlename;
+      this.valueNum = this.staticData[0].valueNum;
+      this.titlename = this.staticData[0].titlename;
     }
   }
 };
