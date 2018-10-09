@@ -34,13 +34,23 @@ module.exports = {
                 loader: 'babel-loader',
                 exclude: /node_modules/
             },
+            // {
+            //     test: /\.(png|jpg|gif|svg)$/,
+            //     loader: 'file-loader',
+            //     options: {
+            //         limit: 10000,
+            //         name: '[name].[ext]'
+            //             // name: utils.assetsPath('img/[name].[hash:7].[ext]')
+            //     }
+            // },
             {
-                test: /\.(png|jpg|gif|svg)$/,
-                loader: 'file-loader',
-                options: {
-                    name: '[name].[ext]?[hash]'
+                test: /\.(gif|jpg|png)\??.*$/,
+                loader: 'url-loader',
+                query: {
+                    limit: 8192,
+                    name: '[name].[hash:7].[ext]'
                 }
-            }
+            },
         ]
     },
     resolve: {
