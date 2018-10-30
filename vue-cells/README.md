@@ -17,6 +17,9 @@ npm run dev
 
 # 打包发布
 npm run build
-```
+``
+
+# 注意：
+开发与打包发布的入口文件需要切换
 
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).

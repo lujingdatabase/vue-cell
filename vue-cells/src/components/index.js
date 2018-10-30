@@ -2,7 +2,7 @@
  * @Author: lujing 
  * @Date: 2018-09-17 17:57:47 
  * @Last Modified by: lujing
- * @Last Modified time: 2018-10-08 11:40:49
+ * @Last Modified time: 2018-10-30 17:48:29
  * @Desc:所有的组件都以j开头，区分其他的组件  
  */
 
@@ -25,6 +25,7 @@ import jXList from './jXList'
 import jXNumber from './jXNumber'
 import jXPie from './jXPie'
 import jXPileBar from './jXPileBar'
+import jTab from './jTab'
 
 
 
@@ -48,7 +49,8 @@ const vueCellSViews = {
         jXList,
         jXNumber,
         jXPie,
-        jXPileBar
+        jXPileBar,
+        jTab
     }
     // 遍历挂载组件
 function install(Vue, _) {
