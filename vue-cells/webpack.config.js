@@ -2,7 +2,9 @@ var path = require('path')
 var webpack = require('webpack')
 
 module.exports = {
+    // 开发环境使用这个入口文件
     // entry: './src/main.js',
+    // 打包发布使用这个入口文件
     entry: './src/components/index.js',
     output: {
         path: path.resolve(__dirname, './dist'),
@@ -44,13 +46,21 @@ module.exports = {
             //     }
             // },
             {
-                test: /\.(gif|jpg|png)\??.*$/,
-                loader: 'url-loader',
-                query: {
-                    limit: 8192,
-                    name: '[name].[hash:7].[ext]'
+                test: /\.(png|jpg|gif|woff|woff2|eot|ttf|svg)$/,
+                loader: 'file-loader',
+                options: {
+                    limit: 10000,
+                    name: '[name].[ext]'
                 }
             },
+            // {
+            //     test: /\.(gif|jpg|png)\??.*$/,
+            //     loader: 'url-loader',
+            //     query: {
+            //         limit: 8192,
+            //         name: '[name].[hash:7].[ext]'
+            //     }
+            // },
         ]
     },
     resolve: {
